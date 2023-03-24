@@ -1,15 +1,61 @@
-<!doctype html>
-<title>{% block title %}{% endblock %} - Flaskr</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<nav>
-  <h1>Flaskr</h1>
-</nav>
-<section class="content">
-  <header>
-    {% block header %}{% endblock %}
-  </header>
-  {% for message in get_flashed_messages() %}
-    <div class="flash">{{ message }}</div>
-  {% endfor %}
-  {% block content %}{% endblock %}
-</section>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Part-Time Teaching Jobs in the UK</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Part-Time Teaching Jobs in the UK</h1>
+      <nav>
+        <ul>
+          <li><a href="#jobs">Find Jobs</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="jobs">
+        <h2>Find Part-Time Teaching Jobs</h2>
+        <p>Here you can search for part-time teaching jobs in the UK. Use the form below to search by subject, location, and type of job.</p>
+        <form>
+          <label for="subject">Subject:</label>
+          <select id="subject">
+            <option value="maths">Maths</option>
+            <option value="science">Science</option>
+            <option value="english">English</option>
+          </select>
+          <label for="location">Location:</label>
+          <select id="location">
+            <option value="london">London</option>
+            <option value="manchester">Manchester</option>
+            <option value="birmingham">Birmingham</option>
+          </select>
+          <label for="type">Type of job:</label>
+          <select id="type">
+            <option value="part-time">Part-Time</option>
+            <option value="full-time">Full-Time</option>
+          </select>
+          <button type="submit">Search</button>
+        </form>
+        <ul>
+          <li><a href="#">Job 1</a></li>
+          <li><a href="#">Job 2</a></li>
+          <li><a href="#">Job 3</a></li>
+        </ul>
+      </section>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>We are a website dedicated to helping teachers find part-time teaching jobs in the UK.</p>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For any questions or inquiries, please email us at info@parttimeteachingjobsuk.com</p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Part-Time Teaching Jobs UK</p>
+    </footer>
+  </body>
+</html>
