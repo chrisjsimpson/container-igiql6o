@@ -1,10 +1,71 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Part-Time Teaching Jobs in the UK</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Part-Time Teaching Jobs in the UK</h1>
+      <nav>
+        <ul>
+          <li><a href="#jobs">Find Jobs</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#register">Register Your Interest</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="jobs">
+        <h2>Find Part-Time Teaching Jobs</h2>
+        <p>Here you can search for part-time teaching jobs in the UK. Use the form below to search by subject and location.</p>
+        <form>
+          <label for="subject">Subject:</label>
+          <select id="subject">
+            <option value="maths">Maths</option>
+            <option value="science">Science</option>
+            <option value="english">English</option>
+          </select>
+          <label for="location">Location:</label>
+          <select id="location">
+            <option value="london">London</option>
+            <option value="manchester">Manchester</option>
+            <option value="birmingham">Birmingham</option>
+          </select>
+          <button type="submit">Search</button>
+        </form>
+        <ul>
+          <li><a href="#">Job 1</a></li>
+          <li><a href="#">Job 2</a></li>
+          <li><a href="#">Job 3</a></li>
+        </ul>
+      </section>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>We are a website dedicated to helping teachers find part-time teaching jobs in the UK.</p>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For any questions or inquiries, please email us at info@parttimeteachingjobsuk.com</p>
+      </section>
+      <section id="register">
+        <h2>Register Your Interest</h2>
+        <p>Use the form below to leave your contact details and register your interest in our part-time teaching jobs.</p>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Part-Time Teaching Jobs UK</p>
+    </footer>
+  </body>
+</html>
 
-
-{% block header %}
-    Header
-{% endblock header %}
-
-{% block content %}
-    Content
-{% endblock %}
